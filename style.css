@@ -4,10 +4,6 @@
 
 
 
-
-
-
-
 /* NAVBAR */
 ul {
   list-style-type: none;
@@ -17,17 +13,9 @@ ul {
 
 li {
   float: left;
+  letter-spacing: 5px;
 
 }
-
-li a {
-  display: block;
-  color:black;
-  text-align: center;
-  padding: 16px 16px;
-  text-decoration: none;
-}
-
 
 
 /* HEADER */
@@ -35,4 +23,25 @@ li a {
   background-image: url(https://source.unsplash.com/random);
   background-size: cover;
   padding: 150px 0;
+}
+
+
+/* FOOTER */
+#footer {
+  background-color: rgb(3, 3, 3);
+  color: white;
+  font-size: 20px;
+  padding: 10px;
+}
+
+#footer a {
+  color: lightgrey;
+  font-size: 20px;
+  
+}
+
+.card {
+  padding:50px;
+  text-align: center;
+  size: 10px;
 }
