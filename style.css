@@ -1,0 +1,38 @@
+
+
+/* BODY */
+
+
+
+
+
+
+
+/* NAVBAR */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  float: left;
+
+}
+
+li a {
+  display: block;
+  color:black;
+  text-align: center;
+  padding: 16px 16px;
+  text-decoration: none;
+}
+
+
+
+/* HEADER */
+#header {
+  background-image: url(https://source.unsplash.com/random);
+  background-size: cover;
+  padding: 150px 0;
+}
