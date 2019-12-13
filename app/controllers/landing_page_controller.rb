@@ -9,7 +9,7 @@ class LandingPageController < ApplicationController
     data = params[:contact][:content]
     number = params[:contact][:number]
     user = params[:contact][:email]
-    UserMailer.order_email(data,user,number).deliver_now
+    OrderMailer.order_email(data,user,number).deliver_now
     redirect_to root_path
   end
  
