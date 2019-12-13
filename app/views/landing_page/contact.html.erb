@@ -8,51 +8,20 @@
   </figure>
 </header>
 
-<nav class="header-nav">
-  <ul>
-    <li><a href="#header" class="header-logo">Logo</a></li>
-    <li><a href="#about">About</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#services">Services</a></li>
-    <li><a href="#pricing">Pricing</a></li>
-  </ul>
-</nav>
+
 
 <main>
-  <form action="">
-    Placeholder form
-    <label for="email">
-      Ask for a quote
-      <input type="email" name="email" id="email" placeholder="email" />
-    </label>
-    <label for="">
-      <input type="text" placeholder="Your text here" />
-    </label>
-    <input type="submit" value="" />
-  </form>
+
+
+  <%= form_for :contact do |f| %>
+  <%= f.label :email, 'Email address' %>
+  <%= f.email_field :email , placeholder: 'example@me.com' %> <br>
+  <%= f.label :content %>
+  <%= f.text_area :content, placeholder: 'What would you like us to do for you?' %> <br>
+  <%= f.label :number, 'Phone number' %>
+  <%= f.telephone_field :number %> <br>
+      <%= f.submit 'Submit'%>
+  <% end %>
 </main>
 
-<footer class="footer">
-  <nav class="footer-nav">
-    <ul>
-      <li><a href="#header" class="footer-logo">Logo</a></li>
-      <li>This is a short text describing what we do</li>
-    </ul>
-    <ul>
-      <li>Navegation Links</li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#contact">Contact</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#pricing">Pricing</a></li>
-    </ul>
-    <ul>
-      <li>Contact</li>
-      <li><a href="#">our-email@mail.com</a></li>
-      <li><a href="#">Whatsapp number</a></li>
-      <li><a href="#">Social Media link?</a></li>
-      <li><a href="#">Portifolio link?</a></li>
-    </ul>
-  </nav>
-  <hr />
-  <p>Team54, ©2019</p>
-</footer>
+
