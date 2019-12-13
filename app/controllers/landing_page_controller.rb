@@ -5,11 +5,12 @@ class LandingPageController < ApplicationController
   def contact
   end
 
-  def path 
-    data = params[:content]
-    subject=params[:number]
-    user = params[:email]
-    Mailer.mail_method(data,user,subject).deliver
+  def create
+    data = params[:contact][:content]
+    number = params[:contact][:number]
+    user = params[:contact][:email]
+    UserMailer.order_email(data,user,number).deliver_now
+    redirect_to root_path
   end
  
 end
