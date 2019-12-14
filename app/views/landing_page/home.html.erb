@@ -1,24 +1,6 @@
 <%= provide(:title, 'Home') %>
 
-<header id="header">
-      <h1>Main Head Line</h1>
-      <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere
-        molestias, perferendis dolore dicta consectetur fugit delectus
-        praesentium possimus qui quae exercitationem inventore magnam voluptates
-        unde tempora cumque eaque, consequatur optio?
-      </p>
-      <img src="" alt="Header image" />
-    </header>
-    <nav class="header-nav">
-      <ul>
-        <li><a href="#header" class="header-logo">Logo</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#pricing">Pricing</a></li>
-      </ul>
-    </nav>
+
     <section id="about">
       <h2>About Team 54</h2>
       <p>In which we sell our team vision?Philosophy?How we work Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero laboriosam laborum, sapiente fugiat a unde ipsam quae odio, provident molestias atque ducimus! Debitis quis modi earum accusamus repellendus voluptas amet?</p>
@@ -99,39 +81,6 @@
         consequuntur neque blanditiis porro quasi minus nihil a consequatur
         beatae. Veniam.
       </p>
-      <form action="">
-        Placeholder form
-        <label for="email">
-          Ask for a quote
-          <input type="email" name="email" id="email" placeholder="email" />
-        </label>
-        <label for="">
-          <input type="text" placeholder="Your text here" />
-        </label>
-        <input type="submit" value="" />
-      </form>
+      <%= render 'layouts/contact_form' %>
     </section>
-    <footer class="footer">
-      <nav class="footer-nav">
-        <ul>
-          <li><a href="#header" class="footer-logo">Logo</a></li>
-          <li>This is a short text describing what we do</li>
-        </ul>
-        <ul>
-          <li>Navegation Links</li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#pricing">Pricing</a></li>
-        </ul>
-        <ul>
-          <li>Contact</li>
-          <li><a href="#">our-email@mail.com</a></li>
-          <li><a href="#">Whatsapp number</a></li>
-          <li><a href="#">Social Media link?</a></li>
-          <li><a href="#">Portifolio link?</a></li>
-        </ul>
-      </nav>
-      <hr>
-      <p>Team54, ©2019</p>
-    </footer>
+    
