@@ -1,0 +1,17 @@
+.footer {
+    position: relative;
+    z-index: 2;
+    background-color: #222222;
+    color: white;
+    .logo {
+        .text {
+            color: white;
+        }
+        .num {
+            color: black;
+            &:after {
+                border-color: black;;
+            }
+        }
+    }
+}

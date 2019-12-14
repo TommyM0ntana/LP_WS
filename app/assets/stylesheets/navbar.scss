@@ -118,7 +118,7 @@
     .num {
         transform: scale(0) rotate(180deg);   
         animation: circleUp 0.4s ease-in-out 0.2s forwards;
-        color: #f4f4e9;
+        color: #fbfbf9;
         font-size: 1.5rem;
         display: inline-block;
         padding: 3px;
@@ -145,8 +145,8 @@
 
 .header-nav {
     box-sizing: border-box;
-    background-image: linear-gradient(rgba(97, 98, 101, 0.1) -15%, transparent 20%);
-    background-color: #f4f4e9;
+    background-image: linear-gradient(#f3f3f3 -15%, transparent 20%);
+    background-color: #fbfbf9;
     box-shadow: 0 -2px 5px 5px rgba(53, 54, 56, 0.224);
     position: fixed;
     top: 0;
