@@ -5,9 +5,18 @@
 
 body {
     font-family: 'Lato', sans-serif;
+    margin-top: 49px;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Noto Serif', serif;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+li {
+    list-style: none;
+}

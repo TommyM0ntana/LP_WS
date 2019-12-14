@@ -1,0 +1,36 @@
+.header{
+      font-family: 'Lato', sans-serif;
+      background: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)),
+      image-url('header_photo.jpg');
+      background-position: center;
+      font-weight: 300;
+      color: white;
+      padding-bottom:5%;
+    .header-container{
+       margin-left:20%;
+       max-width:800px;
+       margin:0 auto;
+       box-sizing: border-box;
+      padding: 0 3%;
+        .div1{
+            font-weight: 600;
+            color: #d41fa7;
+            font-size: 14px;
+            padding-top: 5%;
+        }
+        .div2{
+            font-size: 48px;
+        }
+        
+        .div3{
+            
+            width:100%;
+            font-weight: 400;
+            line-height: 2.0rem;
+            font-size: 22px;
+        }
+    }
+    
+
+    
+}
