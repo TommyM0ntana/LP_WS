@@ -8,6 +8,10 @@
       padding-bottom:5%;
     .header-container{
        margin-left:20%;
+       max-width:800px;
+       margin:0 auto;
+       box-sizing: border-box;
+      padding: 0 3%;
         .div1{
             font-weight: 600;
             color: #d41fa7;
@@ -19,10 +23,10 @@
         }
         
         .div3{
-            max-width:800px;
-            width:50%;
+            
+            width:100%;
             font-weight: 400;
-            line-height: 1.5rem;
+            line-height: 2.0rem;
             font-size: 22px;
         }
     }
