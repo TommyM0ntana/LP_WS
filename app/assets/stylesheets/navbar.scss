@@ -1,0 +1,28 @@
+.header-nav {
+    background-color: #f4f4e9;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: top 0.3s;
+    color: rgb(51, 51, 51);
+    font-weight: 300;
+
+    ul {
+        display: flex;
+        padding-left: 0;
+        justify-content: space-evenly;
+
+        li {
+            text-transform: capitalize;
+            list-style: none;
+        }
+
+        .btn-contact {
+            text-transform: uppercase;
+            border: 1px solid;
+            border-radius: 20px;
+            padding: 7px 12px;
+            font-size: 0.65rem;
+        }
+    }
+}
