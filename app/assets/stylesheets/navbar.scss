@@ -6,6 +6,7 @@
     position: fixed;
     z-index: 10;
     top: 0;
+
     .mobile-nav {
         height: 100%;
     }
@@ -18,6 +19,8 @@
     .same-page {
         display: inline-block;
         display: flex;
+        transform: scaleY(0);
+        animation: scaley 0.2s ease-in forwards 0.2s;
         padding: 3%;
         font-size: 2rem;
         color: #ee3dc2;
@@ -30,17 +33,31 @@
         background-color: rgba(255, 255, 255, 0.592);
         transition: 0.3s ease-in;
         a {
+            position: relative;
             display: inline-block;
             height: 100%;
             width: 100%;
             padding-left: 10%;
             transition: 0.5s ease-out;
+            &:before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 50%;
+                height: 0%;
+                width: 120%;
+                opacity: 0;
+                border: 1px solid white;
+                transform-origin: center center;
+                transform: rotate(2deg) scaleX(1);
+                transition: 0.3s ease-out;
+            }
         }
         &:hover {
-            background: linear-gradient(90deg, #ee3dc2 20% , rgb(111, 0, 111) 120%);
+            border-bottom: 5px solid #ee3dc2 !important;
+            zbackground: linear-gradient(90deg, #ee3dc2bf, #ee3dc2);
             a {
-                padding-left: 40%;
-                color: white;
+                padding-left: 33%;
             }
         }
     }
@@ -60,15 +77,26 @@
         right: 30px;
         font-size: 2rem;
         color: #ebebeb;
+        transition: color 0.3s;
         cursor: pointer;
         &:hover {
-            color: #ee3dc2;
+            color: black;
+            filter: drop-shadow(1px 1px 0 #f8f8f2)  drop-shadow(2px 2px 0 #ee3dc2);
         }
     }
 }
 
 .mobile-off * {
-    display: none !important;
+    transform-origin: top center;
+    transform: scaleY(0);
+    margin-top: -22px;
+}
+.mobile-off {
+    margin-top: -20px;
+}
+
+.header-nav .logo {
+    z-index: 20;
 }
 
 .logo {
@@ -83,9 +111,13 @@
     .text {
         font-size: 2rem;
         font-family: 'Noto Serif', serif;
+        opacity: 0;
+        animation: showUp 0.5s ease-in forwards;
     }
 
     .num {
+        transform: scale(0) rotate(180deg);   
+        animation: circleUp 0.4s ease-in-out 0.2s forwards;
         color: #f4f4e9;
         font-size: 1.5rem;
         display: inline-block;
@@ -258,6 +290,20 @@
         animation: 0.5s fadein forwards;
         background-color: rgb(0, 0, 0) !important;
         color: #ee3dc2 !important;
+        &:after {
+            content: "";
+            position: absolute;
+            top: 5px;
+            left: calc(50% - 39px);
+            height: 15px;
+            width: 76px;
+            box-shadow: 1px 1px 0 0 white;
+        }
+        &:hover {
+            &:after {
+                box-shadow: -1px -1px 0 0 white;
+            }
+        }
     }
     }
 }
@@ -272,6 +318,24 @@
     100% {
         height: 12px;
         opacity: 1;
+    }
+}
+
+@keyframes showUp {
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes scaley {
+    100% {
+        transform: scaleY(1);
+    }
+}
+
+@keyframes circleUp {
+    100% {
+        transform: scale(1) rotate(0deg);
     }
 }
 
