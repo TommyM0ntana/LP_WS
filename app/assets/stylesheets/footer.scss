@@ -26,11 +26,12 @@
 .footer-nav {
     max-width: 800px;
     box-sizing: border-box;
+    padding: 0 5%;
     width: 100%;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 250px 1fr 350px 200px;
-    grid-template-rows: 150px 250px 60px;
+    grid-template-columns: 31.26% 1fr 43.76% 25%;
+    grid-template-rows: 150px repeat(2, max-content);
     font-size: 0.8rem;
 }
 
@@ -103,9 +104,9 @@
     grid-row: 2;
     display: grid;
     grid-template-columns: repeat(4, 2fr);
-    grid-template-rows: 20px;
-    grid-auto-rows: 10px;
-    grid-column-gap: 25px;
+    grid-template-rows: 20px max-content;
+    grid-auto-rows: max-content;
+    grid-column-gap: 2.5%;
     grid-row-gap: 20px;
     grid-auto-rows: 8px;
     width: 100%;
@@ -166,4 +167,45 @@
     grid-column-start: 1;
     grid-column-end: 5;
     grid-row-start: 3;
+}
+
+@media only screen and (max-width: 560px) {
+    .footer-nav-links {
+        grid-template-columns: 1fr 1fr;
+        grid-column: 1/2;
+        grid-row: 2;
+        li:last-child, li:nth-last-child(2) {
+            grid-row: 4
+        }
+        li:nth-child(4), li:nth-child(5) {
+            grid-row: 3;
+        }
+    }
+    .main-contact {
+        grid-column: 2;
+        grid-row: 2;
+        margin-left: 50%;
+    }
+
+    .international-contact {
+        padding-top: 20px;
+        justify-self: left;
+        grid-row: 3/4;
+        grid-template-columns: repeat(3, 2fr);
+        height: 400px;
+        li:nth-child(4) {
+            height: max-content;
+            grid-row: 4;
+        }
+        li:nth-child(5) {
+            height: max-content;
+            grid-row: 4;
+        }
+    }
+
+    .date-brand {
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row-start: 4;
+    }
 }
