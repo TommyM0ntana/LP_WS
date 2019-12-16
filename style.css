@@ -19,10 +19,10 @@ li {
 
 
 /* HEADER */
-#header {
+#header { 
   background-image: url(https://source.unsplash.com/random);
   background-size: cover ;
-  padding: 200px 0;
+  padding: 300px 0;
 }
 
 
