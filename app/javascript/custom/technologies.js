@@ -1,3 +1,51 @@
+let techArticles =  [
+    `<article class="tech">
+<h3>HTML5 & CSS3</h3>
+<i class="fab fa-html5"></i>
+<p>Details about the technology above</p>
+</article>`,
+`<article class="tech">
+<h3>React & Redux</h3>
+<i class="fab fa-react"></i>
+<p>Details about the technology above</p>
+</article>`,
+`<article class="tech">
+<h3>Ruby on Rails</h3>
+<i class="fas fa-gem"></i>
+<p>Details about the technology above</p>
+</article>`,
+`<article class="tech">
+<h3>Javascript</h3>
+<i class="fab fa-js"></i>
+<p>Details about the technology above</p>
+</article>`,
+`<article class="tech">
+<h3>Databases & APIS</h3>
+<i class="fas fa-database"></i>
+<p>Details about the technology above</p>
+</article>`,
+`<article class="tech">
+<h3>Hosting & AWS</h3>
+<i class="fab fa-aws"></i>
+<p>Details about the technology above</p>
+</article>`,
+`<article class="tech">
+<h3>Shopfy && Wordpress</h3>
+<i class="fab fa-wordpress"></i>
+<p>Details about the technology above</p>
+</article>`,
+`<article class="tech">
+<h3>Web Plugins</h3>
+<i class="fas fa-puzzle-piece"></i>
+<p>Details about the technology above</p>
+</article>`,
+`<article class="tech">
+<h3>Django</h3>
+<i class="fab fa-python"></i>
+<p>Details about the technology above</p>
+</article>`
+]
+
 window.onload = () => {
     let slideControls = document.getElementsByClassName("controler")
     let onController = slideControls[0]
@@ -35,3 +83,6 @@ window.onload = () => {
     }
 }
 
+window.addEventListener('resize', e => {
+    console.log("resize!")
+})
