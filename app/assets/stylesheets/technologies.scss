@@ -1,4 +1,5 @@
 #technologies {
+    z-index: 1;
     position: relative;
     background-color: #191923;
     color: white;
@@ -7,7 +8,7 @@
     height: 700px;
     grid-template-columns: 100% 0;
     grid-template-rows: min-content 500px min-content;
-    overflow: hidden;
+    overflow-x: hidden;
     padding: 20px 20px 40px 20px;
 
     * {
@@ -23,32 +24,18 @@
 }
 
 .tech-grid {
+    width: 100%;
     max-width: 800px;
+    max-height: 25px;
     margin: 0 auto;
     display: grid;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    padding: 20px;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 20px;
-    transition: 0.5s ease-in-out;
-    max-height: 25px;
-}
-
-.slide-left {
-    top: 128px;
-    position: absolute;
-    transform: translateX(-100vw) !important;
-}
-
-.slide-in {
-    grid-column: 1;
-    grid-row: 2;
-    position: relative !important;
-    transform: translateX(0vw)!important;
-}
-
-.slide-right {
-    top: 128px;
-    position: absolute;
-    transform: translateX(100vw) !important;
+    transition: 0.5s ease-in-out, opacity 0s;
 }
 
 .tech-header {
@@ -98,7 +85,8 @@
 
 .slide-controller {
     margin-top: 25px;
-    position: relative;
+    position: absolute;
+    bottom: 20px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -141,5 +129,95 @@
 @media only screen and (max-width: 500px) {
     .tech-grid {
         grid-template-columns: 1fr;
+    }
+}
+
+.order0 {
+    transform: translateX(500vw);
+    transition: 0.5s ease-in;
+}
+.order1 {
+    transform: translateX(400vw);
+    transition: 0.5s ease-in;
+}
+.order2 {
+    transform: translateX(300vw);
+    transition: 0.5s ease-in;
+}
+.order3 {
+    transform: translateX(200vw);
+    transition: 0.5s ease-in;
+}
+.order4 {
+    transform: translateX(100vw);
+    transition: 0.5s ease-in;
+}
+.order5 {
+    transform: translateX(0);
+    transition: 0.5s ease-in;
+}
+.order6 {
+    transform: translateX(-100vw);
+    transition: 0.5s ease-in;
+}
+.order7 {
+    transform: translateX(-200vw);
+    transition: 0.5s ease-in;
+}
+.order8 {
+    transform: translateX(-300vw);
+    transition: 0.5s ease-in;
+}
+.order9 {
+    transform: translateX(-400vw);
+    transition: 0.5s ease-in;
+}
+.order10 {
+    transform: translateX(-500vw);
+    transition: 0.5s ease-in;
+}
+
+.goBehind {
+    opacity: 0;
+    animation: showUp 0.5s linear forwards;
+}
+.goBehind2 {
+    opacity: 0;
+    animation: showUp2 0.5s linear;   
+}
+
+@keyframes showUp {
+    0% {
+        opacity: 1;
+    }
+    5% {
+        opacity: 1;
+    }
+    6% {
+        opacity: 0;
+    }
+    90% {
+        opacity: 0;
+    }
+    95% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes showUp2 {
+    0% {
+        opacity: 1;
+    }
+    5% {
+        opacity: 1;
+    }
+    6% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
     }
 }

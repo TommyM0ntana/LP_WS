@@ -1,4 +1,4 @@
-window.onload = () => {
+//window.onload = () => {
   let nav = document.getElementById("navbar");
   let navLinks = Array.from(nav.getElementsByClassName("same-page"));
 
@@ -44,4 +44,4 @@ closeMenuBtn.addEventListener("click", e => {
   mobileMenu.classList.add("mobile-off")
 })
 
-}
+//}
