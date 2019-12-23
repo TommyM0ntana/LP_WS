@@ -1,4 +1,5 @@
 window.onload = () => {
+window.scrollTo({top: parseInt(localStorage.getItem('scrollUpTo'))})
 
 const resize = require('./resize.js');
 

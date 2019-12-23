@@ -97,11 +97,11 @@ const fillTechnologies = (col = 6, techSection, slideI) => {
 
         techArticles.forEach((article, i) => {
             if (!insertSlides[slideNum]) {
-                insertSlides[slideNum] = `<div class="tech-grid order${5 - Math.floor(slidesNum/2) + Math.floor(i/4)}">`
+                insertSlides[slideNum] = `<div class="tech-grid order${5 - Math.floor(slidesNum/2) + Math.floor(i/col)}">`
                 if (i === midSlide) {
-                    techEnd += `<div class="controler controler-on"></div>`
+                    techEnd += `<div class="controler ${i/columns} controler-on"></div>`
                 } else {
-                    techEnd += `<div class="controler"></div>`
+                    techEnd += `<div class="controler ${i/columns} "></div>`
                 }
             }
 
@@ -118,6 +118,9 @@ const fillTechnologies = (col = 6, techSection, slideI) => {
             }
         })
 
+        if (slidesNum === 2) {
+            techEnd = `<div class="slide-controller"><div class="controler 0"></div> <div class="controler 1 controler-on"></div>`
+        }
         techSection.innerHTML = techStart + insertSlides.join(" ") + techEnd + '</div>';
 }
 

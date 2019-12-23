@@ -120,6 +120,12 @@
     }
 }
 
+@media only screen and (min-width: 641px) {
+    .tech-grid {
+        left: calc(50vw - 400px)
+    }
+}
+
 @media only screen and (max-width: 640px) {
     .tech-grid {
         grid-template-columns: repeat(2, 1fr);
@@ -182,8 +188,13 @@
     animation: showUp 0.5s linear forwards;
 }
 .goBehind2 {
-    opacity: 0;
+    opacity: 0 !important;
     animation: showUp2 0.5s linear;   
+}
+
+.goBehind3 {
+    opacity: 0 !important;
+    transition: none !important;
 }
 
 @keyframes showUp {
