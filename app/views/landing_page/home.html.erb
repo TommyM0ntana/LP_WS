@@ -2,30 +2,15 @@
 
 <%= render 'layouts/web_for_all' %>
     <%=  render 'layouts/about' %>
-    <section id="services">
-      <h2>Services we offer</h2>
-      <article>
-        <h3>Service 1</h3>
-        <figure>
-          <img src="" alt="service">
-        </figure> 
-        <p>About this service</p>
-      </article>
-      <article>
-        <h3>Service 2</h3>
-        <figure>
-          <img src="" alt="service">
-        </figure> 
-        <p>About this service</p>
-      </article>
-      <article>
-        <h3>Service 3</h3>
-        <figure>
-          <img src="" alt="service">
-        </figure> 
-        <p>About this service</p>
-      </article>
+    <div class = 'serv-heading'> Our Services</div>
+    <section class="services">
+     <%= render 'layouts/services' %>
     </section>
+    <section class='services2'>
+      <%= render 'layouts/services2' %>
+    </section>
+    <div class="serv-footer">REQUEST A QUOTE</div>
+    
     <section id="pricing">
       <h2>Check out our Pricing</h2>
       <article>

@@ -9,6 +9,11 @@ require("@rails/activestorage").start()
 require("channels")
 
 require("custom/nav")
+require("custom/services")
+//= require jquery
+//= require jquery_ujs
+//= require bootstrap
+//= require_tree .
 
 // Uncomment to copy all static images under ../images to the output folder and reference
 // them with the image_pack_tag helper in views (e.g <%= image_pack_tag 'rails.png' %>)

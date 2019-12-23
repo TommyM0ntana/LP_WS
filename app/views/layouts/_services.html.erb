@@ -1,0 +1,68 @@
+<section class="bstimeslider">
+    <div id="rightArrow">
+        <p class = 'r-arrow'>  </p>
+    </div>
+    <div id="viewContainer">
+
+        <div id="tslshow">
+            <div class="border">
+                <div class="bktibx"> 
+                    <img src="/assets/landing pages photo.jpg" alt="">  
+                    
+                        <p class = 'title'> Landing Page</p>
+                        <p class = 'expo'>We can build a robust website with sections where you will be able to showcase your products,
+                           services, portfolio or virtually anything you need your customers to learn about your business.</p>
+                    
+            </div>
+            
+
+                 
+              </div>
+            <div class="bktibx"> 
+              <img src="/assets/robust website photo.jpg" alt="">  
+<p class = 'title'> Full Website</p>
+<p class = 'expo'>We can build a robust website with sections where you will be able to showcase your products,
+ services, portfolio or virtually anything you need your customers to learn about your business.</p>
+               
+            </div>
+            <div class="bktibx"> 
+                <img src="/assets/open shopp photo.jpg" alt="">
+                <p class = 'title'> Online Store</p>
+                <p class = 'expo'> We can build a robust website with sections were you will be able to showcase your products,
+                     services, portfolio or virtually anything you need your customers to learn about your business.</p>
+            </div>
+        </div>
+    </div>
+    <div id="leftArrow">
+        <p class = 'l-arrow'>  </p>
+    </div>
+    
+</section>
+
+<script>
+
+    $(document).ready(function(){
+    
+        var view = $("#tslshow");
+    var move = "300px";
+    var sliderLimit = -300;
+    
+    $("#rightArrow").click(function(){
+    
+        var currentPosition = parseInt(view.css("left"));
+        if (currentPosition >= sliderLimit) view.stop(false,true).animate({left:"-="+move},{ duration: 400})
+    
+    });
+    
+    $("#leftArrow").click(function(){
+    
+        var currentPosition = parseInt(view.css("left"));
+        if (currentPosition < 0) view.stop(false,true).animate({left:"+="+move},{ duration: 400});
+    
+    });
+        
+    
+    });
+           
+        
+            </script>

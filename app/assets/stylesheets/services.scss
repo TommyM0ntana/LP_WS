@@ -1,0 +1,122 @@
+.services{
+    font-family: 'Times New Roman', Times, serif;
+    display: none;
+    .bstimeslider {
+
+        width:380px;
+        height:330px;
+        position:relative; 
+        padding-bottom:50px;  
+        margin: 0px auto; 
+        margin-bottom: 10px;
+        }
+        
+        .bktibx {
+        
+        float:left;
+        margin:0 ;
+        font-size:18px;
+        width:300px;
+        display:block;
+        color:#fff;
+        text-align: center;
+        
+        border: 0.1px solid; 
+        border-color: rgb(231, 222, 222);
+        
+        }
+        
+        #tslshow {
+        position:absolute;
+        left:0;
+        width:2000px;
+        
+        }
+        #viewContainer {
+        width:300px;
+        height:100%;
+        position:absolute;
+        left:50%;
+        margin-left:-150px;
+        overflow:hidden; 
+        }
+        
+        #leftArrow {
+        text-align: center;
+        width:40px;
+        height:300px;
+        position:absolute;
+        left:0px;
+        }
+        #rightArrow {
+        text-align: center;
+        width:40px;
+        height:300px; 
+        position:absolute;
+        right:0px;
+        }
+        
+        img{
+            width: 298px;
+            height: 50%;
+            padding-top: 1px;
+        }
+        
+        
+        .title{
+            font-size: 20px;
+            color:black;
+            font-weight: 500;
+        }
+        
+        .expo{
+            font-size: 16px;
+            color: rgb(99, 95, 95);
+            font-weight: lighter;
+            border-color: rgb(172, 167, 167);
+            
+        }
+        
+        .r-arrow , .l-arrow{
+            font-size: 36px;
+            margin-top: 150px;
+            font-weight: 600;
+            color:rgb(99, 95, 95)
+        }
+        
+        
+}
+.serv-heading{
+    font-size: 28px;
+    color: #535353;
+    text-align: center;
+    font-family: 'Noto Serif', serif;
+    padding: 30px 0 ;
+}
+
+.serv-footer{
+    color:#d3d0cb;
+    font-size: 16px;
+    background-color: #222121;
+    width: 10%;
+    border: 1px solid;
+    border-radius: 5px;
+    padding:15px;
+    text-align: center;
+    margin: 0px auto;
+    font-family: 'Lato Light';
+    margin-top: 10px;
+}
+
+
+
+@media only screen and (max-width: 430px){
+    .services{
+        display: block
+    }
+
+    .serv-footer{
+        width: 40%;
+    }
+}
+
