@@ -101,8 +101,7 @@ const fillTechnologies = (col = 6, techSection, slideI) => {
                 if (i === midSlide) {
                     techEnd += `<div class="controler ${i/columns} controler-on"></div>`
                 } else {
-                    techEnd += `<div class="controler ${i/columns} "></div>`
-                }
+                    techEnd += `<div class="controler ${i/columns} "></div>`                }
             }
 
             insertSlides[slideNum] += techArticles[i]

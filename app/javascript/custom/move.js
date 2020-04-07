@@ -104,15 +104,14 @@ const stateMachine = {
         if (action) {
             this.transitions[this.currentState][newAction](stateMachine, ...payload)
         } else {
-            console.log("Can't dispatch action while moving. \n\n action: ", newAction)
-        }
+            console.log("Can't dispatch action while moving. \n\n action: ", newAction)        }
     },
 
     changeStateTo: function(item = stateMachine,newState) {
         item.currentState = newState;
     },
 }
- 
+
 // Startup items 
 setTimeout(() => {
     it = document.getElementsByClassName("tech-grid")
@@ -129,6 +128,7 @@ setTimeout(() => {
     setControls(mySlideControls)
     mySlideControls[0].click()
 }, 250);
+
 
 window.addEventListener('resize', e => {
     console.log(window.pageYOffset)
@@ -151,7 +151,7 @@ const setControls = (mySlideControls) => {
                 clearInterval(slideTimer)
 
                 stateMachine.dispatch('moveRight', direction[0], 'start')
-                
+
                 cleanControls(i, d)
                 newSlide(i, d)
 
@@ -163,7 +163,7 @@ const setControls = (mySlideControls) => {
                 slideTimer = setInterval(autoSlide, 5000)
             }
         })
-        
+
     })
 }
 
@@ -188,7 +188,7 @@ const newSlide = (i, d) => {
     let order = 0;
     let start;
     let end;
-    
+
     slides[i].classList.remove(orderClass);
     slides[i].classList.add("order5");
 
@@ -220,7 +220,7 @@ const newSlide = (i, d) => {
 
         slides[j].classList.remove(orderClass);
         slides[j].classList.add('order' + items.order[j]);
-        
+
         if (((order - Math.abs(distance) < start || order + Math.abs(distance) > end)) ||
             (j === d && (d === size - 1 && i === 0 || d === 0 && i === size - 1))) {
             slides[j].classList.add('goBehind3')
