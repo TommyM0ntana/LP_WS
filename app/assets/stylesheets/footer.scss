@@ -1,0 +1,211 @@
+.footer {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: -20px;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    background-color: #222222;
+    color: white;
+    padding-top: 30px;
+    .logo {
+        .text {
+            color: white;
+        }
+        .num {
+            color: black;
+            &:after {
+                border-color: black;;
+            }
+        }
+    }
+}
+
+.footer-nav {
+    max-width: 800px;
+    box-sizing: border-box;
+    padding: 0 5%;
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 31.26% 1fr 43.76% 25%;
+    grid-template-rows: 150px repeat(2, max-content);
+    font-size: 0.8rem;
+}
+
+.footer-logo-area {
+    font-size: 0.8rem;
+    font-weight: 300;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 65px;
+    .text {
+        max-width: 120px;
+    }
+
+    grid-column-start: 1;
+    -ms-grid-column-span: 1;
+}
+
+.footer-nav-links {
+    grid-column: 2/4;
+    justify-self: left;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    grid-auto-rows: 8px;
+
+    li:first-child {
+        font-size: 0.85rem;
+        grid-column: 1/4;
+        opacity: 0.7;
+    }
+
+    li {
+        font-weight: 300;
+    }
+
+}
+
+.main-contact {
+    grid-column: 4/5;
+    grid-row: 1;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 20px;
+    grid-auto-rows: 8px;
+    width: 100%;
+    font-weight: 300;
+
+    li:first-child {
+        font-size: 0.85rem;
+        grid-column: 1/4;
+        opacity: 0.7;
+    }
+
+    li:nth-child(2) {
+        grid-row: 2;
+    }
+    li:nth-child(3) {
+        grid-row: 3;
+    }
+    li:nth-child(4) {
+        grid-row: 4;
+    }
+}
+
+.international-contact {
+    grid-column: 1/5;
+    justify-self: right;
+    grid-row: 2;
+    display: grid;
+    grid-template-columns: repeat(4, 2fr);
+    grid-template-rows: 20px max-content;
+    grid-auto-rows: max-content;
+    grid-column-gap: 2.5%;
+    grid-row-gap: 20px;
+    grid-auto-rows: 8px;
+    width: 100%;
+    max-width: 550px;
+
+    .subtitle {
+        grid-column: 1/5;
+        padding-bottom: 30px;
+        text-align: left;
+        font-weight: 300;
+        opacity: 0.7;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.49);
+    }
+
+    .continent {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-row-gap: 20px;
+        padding: 0 5px;
+        font-weight: 300;
+
+        li:nth-child(1) {
+            grid-row: 1;
+            font-weight: 400;
+            opacity: 0.8;
+        }
+        li:nth-child(2) {
+            grid-row: 2;
+        }
+        li:nth-child(3) {
+            grid-row: 3;
+        }
+        li:nth-child(4) {
+            grid-row: 4;
+        }
+        li:nth-child(5) {
+            grid-row: 5;
+        }
+        li:nth-child(6) {
+            grid-row: 6;
+        }
+        li:nth-child(7) {
+            grid-row: 7;
+        }
+        li:nth-child(8) {
+            grid-row: 8;
+        }
+        li:nth-child(9) {
+            grid-row: 9;
+        }
+        li:nth-child(10) {
+            grid-row: 10;
+        }
+    }
+}
+
+.date-brand {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 3;
+}
+
+@media only screen and (max-width: 560px) {
+    .footer-nav-links {
+        grid-template-columns: 1fr 1fr;
+        grid-column: 1/2;
+        grid-row: 2;
+        li:last-child, li:nth-last-child(2) {
+            grid-row: 4
+        }
+        li:nth-child(4), li:nth-child(5) {
+            grid-row: 3;
+        }
+    }
+    .main-contact {
+        grid-column: 2;
+        grid-row: 2;
+        margin-left: 50%;
+    }
+
+    .international-contact {
+        padding-top: 20px;
+        justify-self: left;
+        grid-row: 3/4;
+        grid-template-columns: repeat(3, 2fr);
+        height: 400px;
+        li:nth-child(4) {
+            height: max-content;
+            grid-row: 4;
+        }
+        li:nth-child(5) {
+            height: max-content;
+            grid-row: 4;
+        }
+    }
+
+    .date-brand {
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row-start: 4;
+    }
+}
