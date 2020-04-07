@@ -157,6 +157,7 @@
     height: 50px;
     display: flex;
     justify-content: center;
+    z-index: 5;
 
     .nav-ul {
         width: 100%;
@@ -182,6 +183,7 @@
 
         li + li:hover {  
           background-color: rgba(0, 0, 0, 0.1);
+          text-decoration: underline #ee3dc2;
         }
         li + li:last-child:hover {  
             background-color: unset;
