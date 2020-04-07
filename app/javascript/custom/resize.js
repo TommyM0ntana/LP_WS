@@ -123,6 +123,6 @@ const fillTechnologies = (col = 6, techSection, slideI) => {
         techSection.innerHTML = techStart + insertSlides.join(" ") + techEnd + '</div>';
 }
 
-exports.getContent = () => {
+module.exports.getContent = () => {
     return techArticles
 }

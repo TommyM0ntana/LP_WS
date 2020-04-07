@@ -131,7 +131,6 @@ setTimeout(() => {
 
 
 window.addEventListener('resize', e => {
-    console.log(window.pageYOffset)
     localStorage.setItem('scrollUpTo', window.pageYOffset)
     window.location.href =  window.location.href        
 });
@@ -144,7 +143,6 @@ const setControls = (mySlideControls) => {
             if (!e.target.classList.contains('controler-on')) {
                 let d = parseInt(document.getElementsByClassName('controler-on')[0].classList[1])
                 direction =  [d - i, i, d];
-                console.log(direction)
 
                 // pause auto slide
                 //clearInterval(autoScroll)
@@ -168,7 +166,6 @@ const setControls = (mySlideControls) => {
 }
 
 const autoSlide = () => {
-    console.log("Sliding\n\n")
     let size = items.length - 1;
     direction[0] = 1;
     direction[1] = direction[2] + 1 > size ? 0 : direction[2] + 1;
@@ -193,7 +190,6 @@ const newSlide = (i, d) => {
     slides[i].classList.add("order5");
 
     let distance = i - d;
-    console.log(distance)
 
     let opop;
     let oshift;
@@ -208,7 +204,6 @@ const newSlide = (i, d) => {
         }
     }
 
-    console.log(items.order)
     start = Math.min(...items.order)
     end = Math.max(...items.order)
 
