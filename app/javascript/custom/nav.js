@@ -1,12 +1,11 @@
 //window.onload = () => {
-  let nav = document.getElementById("navbar");
-  let navLinks = Array.from(nav.getElementsByClassName("same-page"));
+  let navLinks = Array.from(document.getElementById("navbar").getElementsByClassName("same-page"));
 
   // Hides nav bar on scroll down and shows on scroll up
   let prevScrollpos = window.pageYOffset;
   window.onscroll = function() {
     let currentScrollPos = window.pageYOffset;
-    let offsetTop = nav.offsetTop;
+    let offsetTop = document.getElementById("navbar").offsetTop;
     if (prevScrollpos > currentScrollPos || currentScrollPos < 50) {
       document.getElementById("navbar").style.top = "0";
     } else {
@@ -40,6 +39,7 @@ menuBtn.addEventListener("click", e => {
 })
 
 closeMenuBtn.addEventListener("click", e => {
+  console.log('eeeee')
   mobileMenu.classList.remove("mobile-on")
   mobileMenu.classList.add("mobile-off")
 })
