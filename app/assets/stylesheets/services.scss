@@ -94,6 +94,12 @@
     padding: 30px 0 ;
 }
 
+.services-more {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
 .serv-footer{
     color:#d3d0cb;
     font-size: 16px;
@@ -106,6 +112,9 @@
     margin: 0px auto;
     font-family: 'Lato Light';
     margin-top: 10px;
+    cursor: pointer;
+    width: max-content;
+    margin: 0 auto;
 }
 
 
