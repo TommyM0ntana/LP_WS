@@ -1,9 +1,15 @@
 <%= form_for :contact do |f| %>
-  <%= f.label :email, 'Email address' %>
+<div class="contact_labels">
+  <%= f.label :name, 'Your name:' %>   
+  <%= f.text_field :username %>
+  <%= f.label :email, 'Email address:' %>
   <%= f.email_field :email , placeholder: 'example@me.com' %> <br>
-  <%= f.label :content %>
+  <%= f.label :number, "Phone number (Optional):"%>
+  <%= f.telephone_field :number%>
+  </div>
+ <div class="contact_content">
+ <%= f.label :content, "Message:"%>
   <%= f.text_area :content, placeholder: 'What would you like us to do for you?' %> <br>
-  <%= f.label :number, 'Phone number' %>
-  <%= f.telephone_field :number %> <br>
       <%= f.submit 'Submit'%>
+      </div>
   <% end %>
