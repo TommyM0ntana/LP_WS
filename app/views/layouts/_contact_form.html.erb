@@ -1,0 +1,9 @@
+<%= form_for :contact do |f| %>
+  <%= f.label :email, 'Email address' %>
+  <%= f.email_field :email , placeholder: 'example@me.com' %> <br>
+  <%= f.label :content %>
+  <%= f.text_area :content, placeholder: 'What would you like us to do for you?' %> <br>
+  <%= f.label :number, 'Phone number' %>
+  <%= f.telephone_field :number %> <br>
+      <%= f.submit 'Submit'%>
+  <% end %>

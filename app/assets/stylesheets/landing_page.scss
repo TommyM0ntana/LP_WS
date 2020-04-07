@@ -1,0 +1,22 @@
+// Place all the styles related to the LandingPage controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700|Noto+Serif:400,700&display=swap');
+
+body {
+    font-family: 'Lato', sans-serif;
+    margin-top: 49px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Noto Serif', serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+li {
+    list-style: none;
+}

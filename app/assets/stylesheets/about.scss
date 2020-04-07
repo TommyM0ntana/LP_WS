@@ -1,0 +1,50 @@
+.about-container{
+    background-color:rgb(245, 244, 243);
+    font-family: 'Droid-serif';
+   
+    p{
+        font-size: 26px;
+    }
+    .writeup{
+        padding-top:5%;
+        max-width: 100%;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    
+    .icon-container{
+        margin:0 auto;
+        padding: 8% 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr ;
+        grid-gap: 10px;
+        
+    }
+    .icon-descriptions{
+        text-align: center;
+        font-size: 16px;
+        padding-bottom: 5%;
+    }
+    section{
+        max-width: 800px;
+        margin:0 auto;
+        box-sizing: border-box;
+        padding: 0 3%;
+    }
+
+    
+
+    @media only screen and (max-width: 430px){ 
+.icon-container{
+    grid-template-columns: 1fr 1fr !important; 
+}
+
+p{
+    font-size: 18px;
+    line-height: 1.6rem;
+}
+    }
+    
+    
+}
