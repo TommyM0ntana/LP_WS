@@ -55,7 +55,6 @@
         }
         &:hover {
             border-bottom: 5px solid #ee3dc2 !important;
-            zbackground: linear-gradient(90deg, #ee3dc2bf, #ee3dc2);
             a {
                 padding-left: 33%;
             }
@@ -281,6 +280,7 @@
         width: 100%;
         order: 10;
         height: max-content !important;
+        min-height: 26px;
         position: relative;
         top: -12px !important;
         left: 0;
