@@ -23,7 +23,7 @@
   // Scroll to section with same id as clicked li > a class
   navLinks.forEach(link => {
     link.addEventListener("click", ev => {
-      let clas = link.firstChild.classList[0];
+      let clas = link.firstChild.classList[0].replace('-link', '');
       window.scrollTo(0, document.getElementById(clas).offsetTop - 20); 
     })
   });

@@ -2,68 +2,40 @@
 
 <%= render 'layouts/web_for_all' %>
     <%=  render 'layouts/about' %>
-        <section id="about">
-      <h2>About Team 54</h2>
-      <p>In which we sell our team vision?Philosophy?How we work Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero laboriosam laborum, sapiente fugiat a unde ipsam quae odio, provident molestias atque ducimus! Debitis quis modi earum accusamus repellendus voluptas amet?</p>
-      <article>
-        <h3>We are in this many countries/continents</h3>
-        <figure>
-          <img src="" alt="World map">
-          <figcaption>A world map with pins in each of our countries</figcaption>
-        </figure> 
-      </article>
+    <section class="services">
+      <h2 class='serv-heading'> Our Services</h2>
+      <%= render 'layouts/services' %>
     </section>
-        </section>
+    <section id='services' class='services2'>
+      <h2 class='serv-heading-2'> Our Services</h2>
+      <%= render 'layouts/services2' %>
+      <div class='services-more'>
+        <button class="serv-footer">REQUEST A QUOTE</button>
+      </div>
+    </section>
+    <section class="why_us">
+      <div class="why_us_container">
+        <h1> Why us?</h1>
+
+        <ul class="why_us_list">
+          <li class="icon-text"><p><i class="fas fa-star"></i></p> <p> We build tailored websites using up-to-date technologies</p></li>
+          <li class="icon-text"><p><i class="fas fa-star"></i></p> <p> This area is 100% editable</p></li>
+          <li class="icon-text"><p><i class="fas fa-star"></i></p> <p> You can edit this text</p></li>
+          <li class="icon-text"><p><i class="fas fa-star"></i></p> <p> We build tailored websites using up-to-date technologies</p></li>
+          <li class="icon-text"><p><i class="fas fa-star"></i></p> <p> This area is 100% editable</p></li>
+        </ul>
+
+    </div>
+    <div class="side-img">
+        <img src="/assets/comp.png" alt="">
+    </div>
+      <%= render 'layouts/why_us' %>
+    </section>
     <section id="technologies">
 
     </section>
-    <section id="services">
-      <h2>Services we offer</h2>
-      <article>
-        <h3>Service 1</h3>
-        <figure>
-          <img src="" alt="service">
-        </figure> 
-        <p>About this service</p>
-      </article>
-      <article>
-        <h3>Service 2</h3>
-        <figure>
-          <img src="" alt="service">
-        </figure> 
-        <p>About this service</p>
-      </article>
-      <article>
-        <h3>Service 3</h3>
-        <figure>
-          <img src="" alt="service">
-        </figure> 
-        <p>About this service</p>
-      </article>
-    </section>
-    <section id="pricing">
-      <h2>Check out our Pricing</h2>
-      <article>
-        <h3>Option 1</h3>
-        <p>Details on what that gets the client</p>
-        <div>
-          <p>$$$$$$$$</p>
-        </div>
-      </article>
-      <article>
-        <h3>Option 1</h3>
-        <p>Details on what that gets the client</p>
-        <div>
-          <p>$$$$$$$$</p>
-        </div>
-      </article>
-      <article>
-        <h3>Option 1</h3>
-        <p>Details on what that gets the client</p>
-        <div>
-          <p>$$$$$$$$</p>
-        </div>
-      </article>
+    <section id="meet-the-team"> 
+    <%= render 'layouts/meet_the_team' %>
     </section>
     <section id="contact">
       <h2>Get in touch - Contact Section</h2>
