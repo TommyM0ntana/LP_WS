@@ -23,12 +23,12 @@
     }
 }
 
+/*Fixed footer*/
 .footer-nav {
     max-width: 800px;
     box-sizing: border-box;
     padding: 0 5%;
     width: 100%;
-    margin: 0 auto;
     display: grid;
     grid-template-columns: 31.26% 1fr 43.76% 25%;
     grid-template-rows: 150px repeat(2, max-content);
