@@ -1,6 +1,7 @@
 .services{
     font-family: 'Times New Roman', Times, serif;
     display: none;
+    padding: 50px 0;
     .bstimeslider {
 
         width:380px;
@@ -12,18 +13,15 @@
         }
         
         .bktibx {
-        
-        float:left;
-        margin:0 ;
-        font-size:18px;
-        width:300px;
-        display:block;
-        color:#fff;
-        text-align: center;
-        
-        border: 0.1px solid; 
-        border-color: rgb(231, 222, 222);
-        
+            float:left;
+            margin:0 ;
+            font-size:18px;
+            width:300px;
+            display:block;
+            color:#fff;
+            text-align: center;
+            border: 0.1px solid; 
+            border-color: rgb(231, 222, 222);
         }
         
         #tslshow {
@@ -78,6 +76,7 @@
         }
         
         .r-arrow , .l-arrow{
+            cursor: pointer;
             font-size: 40px;
             margin-top: 150px;
             font-weight: bold;
@@ -86,12 +85,12 @@
         
         
 }
-.serv-heading{
-    font-size: 28px;
+.serv-heading, .serv-heading-2{
+    font-size: 36px;
     color: #535353;
     text-align: center;
     font-family: 'Noto Serif', serif;
-    padding: 30px 0 ;
+    padding: 0 0 30px 0 ;
 }
 
 .services-more {
@@ -103,7 +102,7 @@
 .serv-footer{
     color:#d3d0cb;
     font-size: 16px;
-    background-color: #222121;
+    background-color: #540741;
     width: 10%;
     border: 1px solid;
     border-radius: 5px;
@@ -119,13 +118,49 @@
 
 
 
-@media only screen and (max-width: 430px){
+@media only screen and (max-width: 500px){
+    .mobile-off {
+        display: none !important;
+    }
+
     .services{
-        display: block
+        display: block;
+        overflow-x:hidden;
     }
 
     .serv-footer{
         width: 40%;
     }
+
+    .serv-heading-2 {
+        display: none;
+    }
 }
 
+@media only screen and (max-width: 369px){
+    .services{
+        margin-left:-10px;
+
+    }
+
+}
+@media only screen and (max-width: 340px){
+    .services{
+        margin-left:-20px;  
+    }
+    #leftArrow, #rightArrow {
+        width: 10px;
+        background-color:#ee3dc2;
+    }
+    .r-arrow , .l-arrow {
+        display: none;
+    }
+
+
+}
+
+@media only screen and (max-width: 320px){
+    .services{
+        margin-left:-30px;  
+    }
+}

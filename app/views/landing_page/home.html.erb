@@ -2,16 +2,35 @@
 
 <%= render 'layouts/web_for_all' %>
     <%=  render 'layouts/about' %>
-    <div class = 'serv-heading'> Our Services</div>
     <section class="services">
-     <%= render 'layouts/services' %>
+      <h2 class='serv-heading'> Our Services</h2>
+      <%= render 'layouts/services' %>
     </section>
     <section id='services' class='services2'>
+      <h2 class='serv-heading-2'> Our Services</h2>
       <%= render 'layouts/services2' %>
-    </section>
-    <div class='services-more'>
+      <div class='services-more'>
         <button class="serv-footer">REQUEST A QUOTE</button>
+      </div>
+    </section>
+    <section class="why_us">
+      <div class="why_us_container">
+        <h1> Why us?</h1>
+
+        <ul class="why_us_list">
+          <li class="icon-text"><p><i class="fas fa-star"></i></p> <p> We build tailored websites using up-to-date technologies</p></li>
+          <li class="icon-text"><p><i class="fas fa-star"></i></p> <p> This area is 100% editable</p></li>
+          <li class="icon-text"><p><i class="fas fa-star"></i></p> <p> You can edit this text</p></li>
+          <li class="icon-text"><p><i class="fas fa-star"></i></p> <p> We build tailored websites using up-to-date technologies</p></li>
+          <li class="icon-text"><p><i class="fas fa-star"></i></p> <p> This area is 100% editable</p></li>
+        </ul>
+
     </div>
+    <div class="side-img">
+        <img src="/assets/comp.png" alt="">
+    </div>
+      <%= render 'layouts/why_us' %>
+    </section>
     <section id="technologies">
 
     </section>

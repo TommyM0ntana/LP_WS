@@ -1,4 +1,5 @@
 .services2{
+    padding: 50px 0;
     font-family: 'Times New Roman', Times, serif;
     .services-container{
         margin: 0px auto;
@@ -6,10 +7,15 @@
         grid-template-columns: 1fr 1fr 1fr;
         grid-gap:30px;
         justify-content: center;
-    justify-items: center;
-    width:100%;
-    margin: 0px auto;
-    padding-bottom: 10px;;
+        justify-items: center;
+        width:100%;
+        margin: 0px auto;
+        padding-bottom: 10px;;
+    }
+
+    h2 {
+        margin-top: 0;
+        padding-top: 0;
     }
 
     img{
@@ -31,16 +37,20 @@
 }
 
 .bktibx {
-font-size:18px;
-width:100%;
-color:#fff;
-text-align: center;
-border: 0.1px solid; 
-border-color: rgb(231, 222, 222);
+    font-size:18px;
+    width:100%;
+    color:#fff;
+    text-align: center;
+    border: 0.1px solid; 
+    border-color: rgb(231, 222, 222);
+    overflow: hidden;
+    height: max-content;
 }
 
 .pad{
-padding: 0 5px
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
 }
 
 section{
@@ -79,7 +89,7 @@ section{
 }
         
     }
-    @media only screen and (max-width: 430px){
+    @media only screen and (max-width: 500px){
         .services-container{
             display: none;
         }
